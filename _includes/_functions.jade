@@ -1,0 +1,41 @@
+//- ----------------------------------
+//- ⚡️ INCLUDES > FUNCTIONS
+//- ----------------------------------
+
+//- Get current url
+
+-   function getCurrentUrl() {
+-       return url + '/' + current.path.join('/');
+-   }
+
+
+//- Get meta title
+
+-   function getMetaTitle(social) {
+-       if(headline) return (!social) ? headline +  ' | ' + title : headline;
+-       else return title;
+-   }
+
+
+//- Get meta image
+
+-   function getMetaImage() {
+-       var blog = '/blog/img/'
+-       if(image && image.file) return (image.social) ? blog + image.social : blog + image.file;
+-       else return '/assets/img/default.png'
+-   }
+
+
+//- Get Duotone SVG color matrix
+//- inspired by https://codepen.io/jmperez/pen/LGqaxQ by José Manuel Pérez
+
+-   function getColorMatrix(colors) {
+-       var value = [];
+-       var color1 = colors[0] || [255, 255, 255];
+-       var color2 = colors[1] || [0, 0, 0];
+-       value = value.concat([color1[0]/256 - color2[0]/256, 0, 0, 0, color2[0]/256]);
+-       value = value.concat([color1[1]/256 - color2[1]/256, 0, 0, 0, color2[1]/256]);
+-       value = value.concat([color1[2]/256 - color2[2]/256, 0, 0, 0, color2[2]/256]);
+-       value = value.concat([0, 0, 0, 1, 0]);
+-       return value.join(' ');
+-   }

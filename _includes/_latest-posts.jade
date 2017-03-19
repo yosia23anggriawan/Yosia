@@ -1,0 +1,27 @@
+//- ----------------------------------
+//- ⚡️ INCLUDES > LATEST POSTS
+//- ----------------------------------
+
+include _mixins
+
+- var teaser_size = size || 400
+- var post_max = posts || 0
+- var post_counter = 1
+
+section.o-tiles
+    each post, slug in public.blog._data
+        if (post_max === 0 || post_counter <= post_max) && slug != current.source && post.published != false
+
+            article.c-teaser
+                a.c-teaser__link(href="/blog/#{slug}")
+                    h2.c-teaser__headline.u-heading-3.u-text-upper.u-text-center=post.headline
+
+                    svg(width=teaser_size height=teaser_size viewBox="0 0 #{teaser_size} #{teaser_size}" style="background: rgb(" + ((post.colors) ? post.colors[1] : '255, 255, 255') + ")")
+                        defs
+                            filter(id="duotone-filter-#{post_counter}")
+                                feColorMatrix(type="matrix" values=getColorMatrix(post.colors || false))
+
+                        if post.image
+                            image(width="100%" height="100%" filter="url(#duotone-filter-#{post_counter})" xlink:href="/blog/img/#{post.image.file}" preserveAspectRatio="xMidYMin slice")
+
+            - post_counter++

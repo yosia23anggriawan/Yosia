@@ -1,0 +1,171 @@
+//- ----------------------------------
+//- ⚡️ INCLUDES > MIXINS
+//- ----------------------------------
+
+include _functions
+
+
+//- Headlines Helper Mixin
+
+mixin headline(level)
+    if level == 1
+        h1.u-heading-1
+            block
+
+    else if level == 2
+        h2.u-heading-2
+            block
+
+    else if level == 3
+        h3.u-heading-3
+            block
+
+    else if level == 4
+        h4.u-heading-4
+            block
+
+    else if level == 5
+        h5.u-heading-5
+            block
+
+
+//- Permalink rendering
+
+mixin permalink(id)
+    if id
+        a.u-permalink(id=id href="##{id}")
+            block
+
+    else
+        block
+
+
+//- Headlines
+
+mixin h(level, id)
+    +headline(level)
+        +permalink(id)
+            block
+
+
+//- Inline Image
+
+mixin image(filename, caption, alt)
+    figure.o-block&attributes(attributes)
+        img.o-block.o-block--x-small(src=(absolute || "") + "img/#{filename}" alt=(alt || caption) width="1200")
+
+        if caption
+            +image-caption
+                !=caption
+
+        block
+
+
+mixin image-caption()
+    figcaption.u-text-meta
+        block
+
+
+mixin image-credit()
+    figcaption.u-text-meta-small.u-text-right
+        block
+
+
+//- List
+
+mixin list(style)
+    if style
+        ol.c-list.c-list--numbered.o-block&attributes(attributes)
+            block
+
+    else
+        ul.c-list.c-list--unnumbered.o-block&attributes(attributes)
+            block
+
+mixin item()
+    li.c-list__item&attributes(attributes)
+        block
+
+
+//- Date
+
+mixin date(input)
+    - var date = new Date(input)
+    - var months = [ 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ]
+
+    time(datetime=JSON.parse(JSON.stringify(date)))&attributes(attributes)=months[date.getMonth()] + ' ' + date.getDate() + ', ' + date.getFullYear()
+
+
+//- Blockquote
+
+mixin quote(source, link)
+    blockquote.c-quote.o-block&attributes(attributes)
+        p.o-block.u-text-italic
+            block
+
+        if source
+            footer.u-text-meta.u-text-upper
+
+                if link
+                    +a(link)!=source
+
+                else
+                    !=source
+
+
+//- Codepen Embed
+
+mixin codepen(slug, height, default_tab)
+    .o-block&attributes(attributes)
+        .codepen(data-height=height data-theme-id="23801" data-slug-hash=slug data-default-tab=(default_tab || "result") data-embed-version="2" data-user=profiles.codepen)
+            +a("https://codepen.io/" + profiles.codepen + "/" + slug) View on CodePen
+
+
+//- Video Embeds
+
+mixin embed(url, ratio)
+    figure.c-video.o-block(class="c-video--" + (ratio || "16x9"))
+        iframe.c-video__iframe(src=url frameborder="0" height="500" allowfullscreen)
+
+
+//- Youtube video embed
+
+mixin youtube(id, ratio)
+    +embed("https://www.youtube.com/embed/" + id, ratio)
+
+
+//- Code Block
+
+mixin code(language)
+    pre.c-code-block.o-block(class="language-" + (language || "markup"))&attributes(attributes)
+        code.u-text-code
+            block
+
+
+//- External Link
+
+mixin a(url, trusted)
+    a(href=url target="_blank" rel=(!trusted) ? "noopener nofollow" : "")&attributes(attributes)
+        block
+
+
+//- Button
+
+mixin button(url, trusted)
+    +a(url, trusted)(role="button").c-button.u-text-label&attributes(attributes)
+        block
+
+
+//- Icon
+
+mixin icon(name, size)
+    - var size = size || 24;
+
+    span.o-icon(aria-hidden="true")&attributes(attributes)
+        svg(viewBox="0 0 #{size} #{size}" width=size height=size)
+            use(xlink:href="/assets/img/icons.svg##{name}")
+
+//- Divider
+
+mixin divider
+    hr.c-divider

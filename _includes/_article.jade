@@ -1,0 +1,55 @@
+//- ----------------------------------
+//- ⚡️ INCLUDES > ARTICLE
+//- ----------------------------------
+
+include _mixins
+
+article.o-article(class=(image && image.display == false) ? "o-article--full" : "o-article--" + ((wide) ? "narrow" : "wide"))
+
+    //- Article header
+
+    header.o-article__header
+        a(href="/" aria-label="Home")
+            !=partial("_includes/_logo", { size: 125 })
+
+        h1
+            span.u-heading-1.u-text-upper=headline
+
+            if date
+                .o-inline-list.u-text-meta
+                    if category
+                        .u-text-upper.u-text-strong=category
+
+                    +date(date)
+
+                    include _share-icons
+
+    if image && image.display != false
+
+        //- Hero Image
+
+        .c-hero.o-block(class="c-hero--" + ((wide) ? "wide" : "narrow"))
+            svg.c-hero__image(width="100%" height="100%" role="presentation")
+                image(width="100%" height="100%"  xlink:href=((current.path[0] == "blog") ? "/blog/" : "/assets/") + "img/#{image.file}" preserveAspectRatio="xMidYMin slice")
+
+            if image.credit_text
+                +a(image.credit_url).c-hero__credit.u-text-meta-small=image.credit_text
+
+    //- Article content
+
+    .o-article__content
+        !=yield
+
+        if meta
+            p.u-text-meta=meta
+
+        if readmore
+            p
+                +button(readmore) Read more
+
+//- Latest Posts
+
+.o-box
+    h2.o-box__header.u-heading-2 Latest Posts
+
+    !=partial("_includes/_latest-posts", { posts: 3 })
