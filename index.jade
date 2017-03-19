@@ -1,0 +1,12 @@
+//- ----------------------------------
+//- ⚡️ INDEX
+//- ----------------------------------
+
+include _includes/_mixins
+
+header.o-header.u-text-label(role="banner")
+    a(href="/about") About me
+    include _includes/_logo
+    +a("https://twitter.com/" + profiles.twitter) Twitter
+
+include _includes/_latest-posts

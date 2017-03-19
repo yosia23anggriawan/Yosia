@@ -1,0 +1,36 @@
+//- ----------------------------------
+//- ⚡️ RSS FEED
+//- ----------------------------------
+
+include _includes/_mixins
+
+doctype xml
+rss(version="2.0" xmlns:atom="http://www.w3.org/2005/Atom")
+    channel
+        title=title
+        link=url
+        description= description
+        atom:link(href="#{url}/feed" rel="self" type="application/rss+xml")
+
+        each post, slug in public.blog._data
+            if post.published != false
+                item
+                    title=post.headline
+                    description <![CDATA[
+                        if post.image
+                            p
+                                a(href="#{url}/blog/#{slug}")
+                                    img(src="#{url}/blog/img/#{post.image.file}")
+
+                        p=post.description
+
+                        p #[a(href="#{url}/blog/#{slug}") Read more &rarr;]
+                        | ]]>
+
+                    if post.date
+                        - var date = new Date(post.date).toString().split(' ')
+
+                        pubDate=[ date[0] + ",", date[2], date[1], date[3], date[4], date[5].match(/[-+]\d{4}/) || date[5] ].join(" ")
+
+                    link #{url}/blog/#{slug}
+                    guid(isPermaLink="true") #{url}/blog/#{slug}

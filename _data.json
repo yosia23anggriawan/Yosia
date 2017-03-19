@@ -1,0 +1,26 @@
+{
+    "about": {
+        "headline": "About me",
+        "image": {
+            "file": "ines.jpg",
+            "credit_text": "Johanna Warda",
+            "credit_url": "http://johannawarda.com"
+        }
+    },
+
+    "impressum": {
+        "headline": "Impressum & Datenschutz"
+    },
+
+    "404": {
+        "headline": "404 Error"
+    },
+
+    "feed.xml": {
+        "layout": false
+    },
+
+    "robots.txt": {
+        "layout": false
+    }
+}

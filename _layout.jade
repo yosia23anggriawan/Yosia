@@ -1,0 +1,78 @@
+//- ----------------------------------
+//- ⚡️ LAYOUT
+//- ----------------------------------
+
+include _includes/_mixins
+
+doctype html
+html(lang="en")
+
+    head
+        title=getMetaTitle()
+
+        meta(http-equiv="content-type" content="text/html; charset=utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(name="referrer" content="always")
+        meta(name="description" content=description)
+
+        link(rel="shortcut icon" href="/assets/img/favicon.ico")
+        link(rel="alternate" type="application/rss+xml" title="RSS" href="/feed")
+
+        //- Social Media Meta
+
+        meta(property="og:type" content="website")
+        meta(property="og:site_name" content=site)
+        meta(property="og:url" content=getCurrentUrl())
+        meta(property="og:title" content=getMetaTitle(true))
+        meta(property="og:description" content=description)
+        meta(property="og:image" content=url + getMetaImage())
+
+        meta(name="twitter:card" content="summary_large_image")
+        meta(name="twitter:site" content="@" + profiles.twitter)
+        meta(name="twitter:title" content=getMetaTitle(true))
+        meta(name="twitter:description" content=description)
+        meta(name="twitter:image" content=url + getMetaImage())
+
+        if artdirected
+            link(rel="stylesheet" href="/assets/css/art/#{current.source}.css")
+
+        else
+            link(rel="stylesheet" href="/assets/css/style.css")
+
+    body
+        main
+
+            //- Main Content
+
+            if current.path[0] == "index" || artdirected
+                !=yield
+
+            else
+                include _includes/_article
+
+            //- Footer
+
+            footer.o-footer
+                nav.o-inline-list.u-text-meta-small
+                    span &copy; 2015-#{new Date().getFullYear()}
+                    a(href="/") #{site.toUpperCase()}
+                    a(href="/about") About me
+                    a(href="/impressum") Impressum &amp; Datenschutz
+
+                    +a("https://github.com/" + profiles.github + "/ines-io") Source
+                    +a("/feed", true)(aria-label="RSS") #[+icon("feed", 14)]
+
+                include _includes/_social-icons
+
+        //- Scripts
+
+        if highlight_code
+            script(src="/assets/js/prism.js")
+
+        if codepen_embed
+            script(src="https://assets.codepen.io/assets/embed/ei.js" async)
+
+       if environment == "production"
+                script window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date; ga('create', '#{google_analytics}', 'auto'); ga('send', 'pageview');
+
+                script(async src="https://www.google-analytics.com/analytics.js")
