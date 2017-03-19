@@ -1,0 +1,472 @@
+{
+    "how-i-started-coding": {
+        "headline": "Story time: How I started coding",
+        "description": "I've seen a couple of these posts pop up over the past year or so, and I've always enjoyed reading other people's stories. So here's mine.",
+        "date": "2017-02-09",
+        "category": "personal",
+        "image": {
+            "file": "coding.jpg",
+            "credit_text": "Soupmeister",
+            "credit_url": "https://www.flickr.com/photos/soupmeister/5236381352"
+        },
+        "colors": [[29, 255, 210], [140, 61, 147]]
+    },
+
+    "visual-studio-code": {
+        "headline": "An introduction to Visual Studio Code",
+        "description": "A few weeks ago, I finally made the switch to Microsoft's Visual Studio Code. I'm not gonna lie, abandoning Atom broke my heart. But it turned out VSCode wasn't just a rebound – it's really fast, comes with a bunch of great, built-in features and can be surprisingly pretty, given the right configuration.",
+        "date": "2017-02-05",
+        "category": "tech",
+        "image": {
+            "file": "vscode.jpg"
+        },
+        "colors": [[240, 14, 46], [25, 37, 80]],
+        "highlight_code": true
+    },
+
+    "state-of-ai-oslo": {
+        "headline": "48 hours in Oslo: The State of AI, talks and piñatas",
+        "description": "On Monday, we were invited to Oslo by Bakken & Bæck to talk about the State of AI 2016 and share some of the ideas that inspire our work at Explosion AI. Thanks to everyone involved for putting on the event, and thanks to all the people who showed up. We've had lots of fun and great conversations, and I can't wait to come back!",
+        "date": "2016-11-30",
+        "category": "travel",
+        "image": {
+            "file": "oslo.jpg"
+        },
+        "colors": [[122, 255, 98], [107, 17, 202]]
+    },
+
+    "announcing-explosion-ai": {
+        "headline": "Announcing Explosion AI",
+        "description": "Today, we launched the website for our new company, Explosion AI. Explosion is a digital studio specialising in Artificial Intelligence and Natural Language Processing. We design algorithms, applications and data assets, and develop custom solutions to today's AI problems.",
+        "date": "2016-10-03",
+        "category": "personal",
+        "image": {
+            "file": "explosion-ai.jpg"
+        },
+        "colors": [[30, 25, 53], [103, 76, 227]]
+    },
+
+    "displacy-js-nlp-visualizer": {
+        "headline": "displaCy.js: An open-source NLP visualiser for the modern web",
+        "description": "With new offerings from Google, Microsoft and others, there are now a range of excellent cloud APIs for syntactic dependencies. A key part of these services is the interactive demo, where you enter a sentence and see the resulting annotation. Over at Explosion AI, we're pleased to announce the release of displaCy.js, a  modern and service-independent visualisation library.",
+        "date": "2016-10-03",
+        "category": "code",
+        "image": {
+            "file": "displacy-js.jpg",
+            "credit_text": "Kemal Şanlı",
+            "credit_url": "https://dribbble.com/kemal"
+        },
+        "colors": [[255, 297, 0], [0, 58, 255]],
+        "wide": true,
+        "readmore": "https://explosion.ai/blog/displacy-js-nlp-visualizer"
+    },
+
+    "how-front-end-can-improve-ai": {
+        "headline": "How Front-End Development Can Improve Artificial Intelligence",
+        "description": "What's holding back Artificial Intelligence? While researchers rightly focus on better algorithms, there are a lot more things to be done. In this post I'll discuss three ways in which front-end development can improve AI technology: by improving the collection of annotated data, communicating the capabilities of the technology to key stakeholders, and exploring the system's behaviours and errors.",
+        "date": "2016-08-22",
+        "category": "tech",
+        "image": {
+            "file": "ai-frontend.jpg",
+            "credit_text": "Freepik (adapted)",
+            "credit_url": "http://www.freepik.com/free-vector/adaptative-web-development-vector_757643.htm"
+        },
+        "colors": [[46, 20, 55], [164, 222, 210]]
+    },
+
+    "custom-console-logging-emoji": {
+        "headline": "Custom Console Logging with Emoji",
+        "description": "Debugging JavaScript can be painful and often means spending hours looking at boring console logs. Inspired by console.frog by Tim Holman, a little script that displays your messages with an ASCII frog, I made my own console logger — but with customizable commands and emoji. Logging to the console is finally fun again, thanks to console.beer 🍺 and console.unicorn 🦄.",
+        "date": "2016-06-20",
+        "category": "code",
+        "image": {
+            "file": "emoji-console.jpg"
+        },
+        "colors": [[0, 255, 132], [44, 50, 232]],
+        "highlight_code": true
+    },
+
+    "the-ultimate-guide-static-websites-harp-jade": {
+        "headline": "The Ultimate Guide to Static Websites with Harp & Jade",
+        "description": "In this blog post, I'll explain how to install and set up your blog with Harp in about a minute (yes, really!) and how to write powerful templates using Jade. I'll also share a couple of useful tips and tricks, as well as a nice-looking skeleton blog template I wrote to get you started.",
+        "date": "2016-05-26",
+        "category": "code",
+        "image": {
+            "file": "harp-jade.jpg",
+            "credit_text": "Skye Selbiger (adapted)",
+            "credit_url": "http://www.skyeselbiger.com"
+        },
+        "colors": [[245, 101, 101], [30, 57, 126]],
+        "highlight_code": true,
+        "codepen_embed": true
+    },
+
+    "dynamic-duotone-svg-jade": {
+        "headline": "Dynamic duotone SVG images with feColorMatrix and Jade",
+        "description": "In this blog post I'm going to explain the idea behind the duotone effect, how to achieve it using SVGs and the much talked about feColorMatrix, and how to do and automate the matrix calculation. I'll also show how I've implemented an easy color matrix generator in my blog CMS.",
+        "date": "2016-05-26",
+        "category": "code",
+        "image": {
+            "file": "duotone.jpg"
+        },
+        "colors": [[122, 255, 98], [107, 17, 202]],
+        "highlight_code": true,
+        "codepen_embed": true
+    },
+
+    "modular-markup": {
+        "headline": "Rebuilding a Website with Modular Markup Components",
+        "description": "In a small team, everyone should be able to contribute content to the website without having to worry about design or write complex HTML.",
+        "date": "2016-04-01",
+        "category": "code",
+        "image": {
+            "file": "modular-markup.jpg"
+        },
+        "wide": true,
+        "colors": [[0, 228, 255], [46, 20, 55]],
+        "readmore": "https://spacy.io/blog/modular-markup"
+    },
+
+    "australia-travel-blog": {
+        "headline": "Australia Travel Blog",
+        "description": "My travel diary from a month of exploring Australia, mainly Sydney, Melbourne and the countryside.",
+        "date": "2016-03-16",
+        "category": "travel",
+        "image": {
+            "file": "australia-travel-blog/beach.jpg"
+        },
+        "colors": [[255, 192, 79], [246, 22, 157]],
+        "artdirected": true
+    },
+
+    "guide-everyday-life-minimalism": {
+        "headline": "A guide to everyday life minimalism",
+        "description": "Minimalism is incredibly trendy right now and has been for a while. Its aesthetic interpretations flood Tumblr and Instagram and it's almost painful to look at.",
+        "category": "life",
+        "date": "2016-02-16",
+        "image": {
+            "file": "minimalism.jpg"
+        },
+        "colors": [[0, 255, 104], [0, 106, 195]],
+        "medium": "https://medium.com/@inesmontani/a-guide-to-everyday-life-minimalism-2340f44c7080"
+    },
+
+    "switching-to-desktop-apps": {
+        "headline": "I switched from web apps to desktop apps and it's amazing",
+        "description": "If you are, like me, very sensitive to small inconveniences and frustrations, good programs that do their job efficiently and look so nice that even seeing the little dock icon makes you happy, can have a huge impact on your life.",
+        "date": "2016-02-03",
+        "category": "tech",
+        "image": {
+            "file": "desktop.jpg"
+        },
+        "colors": [[2, 204, 131], [4, 56, 104]]
+    },
+
+    "browser-extension-for-more-everyday-life-badassery": {
+        "headline": "The browser extension for more everyday life badassery",
+        "description": "When my friend Jowa asked me to help her build the new website for her project Scheidé Revoltée, I knew this would be right up my alley. Their mission: celebrating equality, fighting outdated gender stereotypes and making a difference by empowering girls all over the world to be badass in their everyday life, one step at a time.",
+        "date": "2015-12-17",
+        "category": "code",
+        "image": {
+            "file": "scheidify.jpg",
+            "social": "scheidify_screenshot.jpg",
+            "credit_url": "http://flirtmoji.co",
+            "credit_text": "Katy McCarthy, Flirtmoji"
+        },
+        "colors": [[252,53,76], [10,191,188]],
+        "medium": "https://medium.com/@inesmontani/the-browser-extension-for-more-everyday-life-badassery-c0ef6d9d6209",
+        "highlight_code": true
+    },
+
+    "the-ultimate-guide-static-websites-jekyll": {
+        "headline": "The Ultimate Guide to Static Websites with Jekyll",
+        "description": "Most personal blogs don't actually need a heavyweight content management system like WordPress. It's funny to call WordPress a \"heavyweight CMS\" when it used to be the only decent CMS that wasn't a bulky monster.",
+        "date": "2015-11-28",
+        "category": "code",
+        "image": {
+            "file": "jekyll.jpg",
+            "credit_url": "http://www.sketchappsources.com/free-source/917-jekyll-logo-sketch-freebie-resource.html",
+            "credit_text": "Julio Estrada"
+        },
+        "colors": [[164, 222, 210], [46, 20, 55]],
+        "medium": "https://medium.com/@inesmontani/the-ultimate-guide-to-static-websites-with-jekyll-8ec2b72febf1",
+        "highlight_code": true
+    },
+
+    "i-fell-for-self-help-so-you-dont-have-to" : {
+        "headline": "I fell for self-help so you don't have to",
+        "description": "I hate to admit it, but during my late teenage years and the beginning of my adult life, I massively fell for self-help blogs.",
+        "date": "2015-10-14",
+        "category": "opinion",
+        "image": {
+            "file": "gemstones.jpg",
+            "credit_url": "http://thepatternlibrary.com",
+            "credit_text": "The Pattern Library"
+        },
+        "colors": [[122, 255, 98], [107, 17, 202]],
+        "medium": "https://medium.com/@inesmontani/i-fell-for-self-help-so-you-don-t-have-to-203655dcaf55"
+    },
+
+    "5-things-i-learned-from-working-in-print": {
+        "headline": "5 things I learned from working in print",
+        "description": "For four years, I worked for a popular print magazine, developing marketing strategies, selling advertising space and coordinating partnerships.",
+        "date": "2015-09-29",
+        "category": "opinion",
+        "image": {
+            "file": "print.jpg",
+            "credit_text": "Amador Loureiro",
+            "credit_url": "https://unsplash.com/photos/BVyNlchWqzs"
+        },
+        "colors": [[0, 255, 195], [82, 0, 163]]
+    },
+
+    "developing-displacy": {
+        "headline": "displaCy: Dependency parse tree visualization with CSS",
+        "description": "My latest project started out as web development job but quickly turned into something much bigger: displaCy, a visualiser for dependency parse trees (grammatical structure) using the spaCy API.",
+        "date": "2015-08-20",
+        "category": "code",
+        "image": {
+            "file": "displacy.jpg"
+        },
+        "colors": [[164, 222, 210], [46, 20, 55]],
+        "highlight_code": true,
+        "codepen_embed": true
+    },
+
+    "farin-urlaub-interview": {
+        "headline": "Farin Urlaub Interview",
+        "description": "Earlier this summer, I interviewed Farin Urlaub (funnily enough, one of my early teenage idols), for Exberliner.",
+        "date": "2015-08-17",
+        "category": "pop",
+        "image": {
+            "file": "farinurlaub.jpg",
+            "credit_text": "Olaf Heine"
+        },
+        "colors": [[0, 255, 104], [0, 106, 195]],
+        "wide": true,
+        "readmore": "http://www.exberliner.com/culture/music--nightlife/farin-urlaub-interview/",
+        "meta": "Published in Exberliner, issue #140, July/August 2015"
+    },
+
+    "deichkind-interview": {
+        "headline": "Deichkind Interview",
+        "description": "Earlier this year, Walter and I met Deichkind for Exberliner and we talked about career ambitions, getting older, the digital generation and German music fans.",
+        "date": "2015-04-21",
+        "category": "pop",
+        "image": {
+            "file": "deichkind.jpg",
+            "credit_text": "Jonas Lindström"
+        },
+        "colors": [[240, 14, 46], [25, 37, 80]],
+        "wide": true,
+        "readmore": "http://www.exberliner.com/culture/music--nightlife/deichkind-english-interview/",
+        "meta": "Published in Exberliner, issue #112, January 2013"
+    },
+
+    "new-york-travel-guide": {
+        "headline": "New York City Travel Guide",
+        "description": "New York, die Liste der romantischen Stereotypen und Erwartungen ist endlos. Nach knapp eineinhalb Monaten und einem mehr oder weniger normalen Alltag in New York bin ich zurück in Berlin und habe ein paar meiner Erfahrungen zusammengefasst.",
+        "date": "2015-03-25",
+        "category": "travel",
+        "language": "de",
+        "image": {
+            "file": "newyork.jpg"
+        },
+        "colors": [[115, 217, 112], [36, 32, 106]]
+    },
+
+    "new-york-travel-blog": {
+        "headline": "New York City Travel Blog",
+        "description": "In early 2015, I left my job and got on a flight to New York City. This is my diary about a month and a half in New York.",
+        "date": "2015-03-16",
+        "category": "travel",
+        "image": {
+            "file": "newyorktravelblog.jpg"
+        },
+        "colors": [[245, 246, 0], [107, 17, 202]],
+        "artdirected": true
+    },
+
+    "die-zukunft-ist-da": {
+        "headline": "Die Zukunft ist da: Über die Arbeit und den Neustart",
+        "description": "In den letzten Monaten habe ich einen entscheidenden Schritt gemacht und einen Neustart gewagt.",
+        "date": "2015-02-07",
+        "category": "opinion",
+        "language": "de",
+        "image": {
+            "file": "hands.jpg",
+            "credit_text": "Death to the Stock Photo"
+        },
+        "colors": [[2, 204, 131], [4, 56, 104]]
+    },
+
+    "hipster-shop-concept-generator": {
+        "headline": "The Hipster Business Shop Concept Generator",
+        "description": "Berlin is full of concept stores selling the weirdest combinations of random products and trying their best to be as quaint as possible.",
+        "date": "2014-12-23",
+        "category": "fun",
+        "image": {
+            "file": "shopconcept.jpg"
+        },
+        "colors": [[245, 101, 101], [30, 57, 126]]
+    },
+
+    "who-the-fk-is-helene-fischer": {
+        "headline": "Who the f**k is Helene Fischer?",
+        "description": "For Exberliner I tried to explain the weirdness, embarrassments and curiosities of German music. Especially one phenomenon: Helene Fischer.",
+        "date": "2014-11-20",
+        "category": "pop",
+        "wide": true,
+        "image": {
+            "file": "helenefischer.jpg",
+            "credit_text": "Abhijay Achatz",
+            "credit_url": "https://flic.kr/p/dEgPYq"
+        },
+        "colors": [[10,191,188], [252,53,76]],
+        "readmore": "http://www.exberliner.com/culture/music--nightlife/who-the-fuck-is-helene-fischer/",
+        "meta": "Published in Exberliner, issue #131, October 2014"
+    },
+
+    "gay-men-reading-german-cosmopolitan": {
+        "headline": "Gay Men Reading German Cosmopolitan",
+        "description": "Ein kleines Spaßprojekt über die Absurditäten deutscher Frauenmagazine – gelesen von schwulen Männern.",
+        "date": "2014-09-04",
+        "category": "fun",
+        "language": "de",
+        "image": {
+            "file": "gaymenreading.jpg",
+            "credit_text": "Natalia Peris / Flickr"
+        },
+        "colors":  [[255, 192, 79], [246, 22, 157]],
+        "readmore": "http://gaymenreading.tumblr.com"
+    },
+
+    "ich-bin-dagegen-aber": {
+        "headline": "Generation Y und das tägliche Unbehagen: Ich bin dagegen, aber...",
+        "description": "\"Was immer bleibt, ist dieses Gefühl: Scheiße, du müsstest doch eigentlich was machen!\" schreibt Tino Hanekamp.",
+        "date": "2014-07-15",
+        "category": "opinion",
+        "language": "de",
+        "image": {
+            "file": "confetti.jpg",
+            "credit_text": "Daltonkat2 / Flickr"
+        },
+        "colors": [[0, 255, 195], [82, 0, 163]]
+    },
+
+    "schlandmania": {
+        "headline": "Schlandmania",
+        "description": "Seit 2006 ist es gang und gäbe, wieder Flagge zu zeigen. Sie wehen an Autos und Häusern, zieren die Gesichter der Fanmeilen-Besucher und Prominenten (wenn auch nicht immer gekonnt) und bestimmen wochenlang das Stadtbild jeder Klein und Großstadt.",
+        "date": "2014-07-09",
+        "category": "opinion",
+        "language": "de",
+        "image": {
+            "file": "schlandmania.jpg"
+        },
+        "colors": [[255, 168, 0], [195, 0, 87]]
+    },
+
+    "the-early-years": {
+        "headline": "Best of analog 2008-2012",
+        "description": "A collection of disposable camera memories between 2008 and 2012, between Cologne and Berlin, with visits several other places.",
+        "date": "2014-06-10",
+        "category": "personal",
+        "image": {
+            "file": "the-early-years/analog13.jpg",
+            "display": false
+        },
+        "colors": [[245, 246, 0], [107, 17, 202]]
+    },
+
+    "christiane-f-interview": {
+        "headline": "Christiane F. Interview",
+        "description": "For Exberliner, Christiane Felscherinow answered Walter's and my questions.",
+        "date": "2014-01-22",
+        "category": "pop",
+        "image": {
+            "file": "christianef.jpg",
+            "credit_text": "Levante Verlag"
+        },
+        "wide": true,
+        "colors": [[240, 14, 46], [25, 37, 80]],
+        "readmore": "http://www.exberliner.com/features/people/christianes-second-life/",
+        "meta": "Published in Exberliner, issue #123, January 2014"
+    },
+
+    "tocotronic-interview": {
+        "headline": "Tocotronic Interview",
+        "description": "For the January issue of Exberliner I met Dirk von Lowtzow and Jan Müller of Tocotronic for an interview in the Whiskey Room of Michelberger Hotel.",
+        "date": "2013-01-22",
+        "category": "pop",
+        "wide": true,
+        "image": {
+            "file": "tocotronic.jpg",
+            "credit_text": "Michael Petersohn"
+        },
+        "colors": [[189, 0, 250], [34, 34, 34]],
+        "readmore": "http://www.exberliner.com/culture/music--nightlife/tocotronic-interview/",
+        "meta": "Published in Exberliner, issue #112, January 2013"
+    },
+
+    "the-drums-interview": {
+        "headline": "The Drums Interview",
+        "description": "This post is part of a series of music interviews I did back when I was running an indie music website and going to gigs almost every other day.",
+        "date": "2010-05-31",
+        "category": "pop",
+        "image": {
+            "file": "thedrums.jpg"
+        },
+        "colors": [[2, 204, 131], [4, 56, 104]],
+        "meta": "Originally published in German in 2010"
+    },
+
+    "mumford-and-sons-interview": {
+        "headline": "Mumford & Sons Interview",
+        "description": "This post is part of a series of music interviews I did back when I was running an indie music website and going to gigs almost every other day.",
+        "date": "2009-11-28",
+        "category": "pop",
+        "image": {
+            "file": "mumford.jpg"
+        },
+        "colors": [[0, 255, 195], [82, 0, 163]],
+        "meta": "Originally published in German in 2009"
+    },
+
+    "adam-ficek-interview": {
+        "headline": "Adam Ficek (Babyshambles) Interview",
+        "description": "This post is part of a series of music interviews I did back when I was running an indie music website and going to gigs almost every other day.",
+        "date": "2009-06-06",
+        "category": "pop",
+        "image": {
+            "file": "adamficek.jpg"
+        },
+        "colors": [[122, 255, 98], [107, 17, 202]],
+        "meta": "Originally published in German in 2009"
+    },
+
+    "holy-fuck-interview": {
+        "headline": "Holy Fuck Interview",
+        "description": "This post is part of a series of music interviews I did back when I was running an indie music website and going to gigs almost every other day.",
+        "date": "2009-04-27",
+        "category": "pop",
+        "image": {
+            "file": "holyfuck.jpg",
+            "credit_text": "Jen Robinson",
+            "credit_url": "https://flic.kr/p/7MEDjK"
+        },
+        "colors": [[245, 101, 101], [30, 57, 126]],
+        "meta": "Originally published in German in 2009"
+    },
+
+    "the-indelicates-interview": {
+        "headline": "The Indelicates Interview",
+        "description": "This post is part of a series of music interviews I did back when I was running an indie music website and going to gigs almost every other day.",
+        "date": "2007-10-10",
+        "category": "pop",
+        "image": {
+            "file": "theindelicates.jpg"
+        },
+        "colors": [[255, 192, 79], [246, 22, 157]],
+        "meta": "Originally published in German in 2007"
+    }
+}
